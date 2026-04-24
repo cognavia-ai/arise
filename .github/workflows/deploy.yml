@@ -1,0 +1,59 @@
+name: Deploy to Digital Ocean
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Next.js app
+        run: npm run build
+
+      - name: Deploy to Digital Ocean
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: root
+          key: ${{ secrets.DO_SSH_KEY }}
+          source: ".next,public,package.json,package-lock.json,next.config.ts"
+          target: "/var/www/arise/v1/"
+          overwrite: true
+
+      - name: Install and restart on server
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.DO_HOST }}
+          username: root
+          key: ${{ secrets.DO_SSH_KEY }}
+          script: |
+            cd /var/www/arise/v1
+            npm ci --production
+
+            # Install PM2 if not installed
+            which pm2 || npm install -g pm2
+
+            # Stop existing process if running
+            pm2 delete arise-v1 2>/dev/null || true
+
+            # Start the app
+            pm2 start npm --name "arise-v1" -- start -- -p 3001
+            pm2 save
+
+            echo "Deployed successfully!"
+            echo "App running on port 3001"
