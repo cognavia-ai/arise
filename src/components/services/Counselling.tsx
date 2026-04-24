@@ -32,7 +32,7 @@ export default function Counselling() {
       ]}
       icon={Brain}
       reversed={true}
-      imageSrc="/images/services/counselling.jpg"
+      imageSrc="/v1/images/services/counselling.jpg"
     />
   );
 }

@@ -33,7 +33,7 @@ export default function WoundCare() {
       ]}
       icon={HeartPulse}
       reversed={true}
-      imageSrc="/images/services/wound-care.jpg"
+      imageSrc="/v1/images/services/wound-care.jpg"
     />
   );
 }

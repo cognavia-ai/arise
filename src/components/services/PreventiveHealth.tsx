@@ -32,7 +32,7 @@ export default function PreventiveHealth() {
       ]}
       icon={Shield}
       reversed={false}
-      imageSrc="/images/services/preventive-health.jpg"
+      imageSrc="/v1/images/services/preventive-health.jpg"
     />
   );
 }

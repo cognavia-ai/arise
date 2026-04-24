@@ -34,7 +34,7 @@ export default function DiabeticCare() {
       ]}
       icon={Activity}
       reversed={false}
-      imageSrc="/images/services/diabetes-care.jpg"
+      imageSrc="/v1/images/services/diabetes-care.jpg"
     />
   );
 }

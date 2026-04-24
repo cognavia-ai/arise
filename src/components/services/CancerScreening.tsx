@@ -33,7 +33,7 @@ export default function CancerScreening() {
       ]}
       icon={Search}
       reversed={true}
-      imageSrc="/images/services/cancer-screening.jpg"
+      imageSrc="/v1/images/services/cancer-screening.jpg"
     />
   );
 }

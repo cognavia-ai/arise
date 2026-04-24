@@ -62,7 +62,7 @@ export default function DoctorProfile() {
             <div className="relative">
               <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden relative">
                 <Image
-                  src="/images/doctor/dr-premlal.jpg"
+                  src="/v1/images/doctor/dr-premlal.jpg"
                   alt={DOCTOR_INFO.name}
                   fill
                   className="object-cover"

@@ -33,7 +33,7 @@ export default function PalliativeCare() {
       ]}
       icon={Hand}
       reversed={false}
-      imageSrc="/images/services/palliative-care.jpg"
+      imageSrc="/v1/images/services/palliative-care.jpg"
     />
   );
 }

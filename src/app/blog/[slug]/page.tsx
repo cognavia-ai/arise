@@ -9,15 +9,15 @@ import { getAllPosts, getPostBySlug } from "@/lib/blog";
 
 // Map blog slugs to their images
 const blogImages: Record<string, string> = {
-  "diabetic-foot-care-guide": "/images/blog/diabetic-foot-care.jpg",
-  "diabetes-reversal-lifestyle": "/images/blog/diabetes-reversal.jpg",
-  "understanding-hba1c": "/images/blog/hba1c.jpg",
-  "obesity-prevalence-college-students": "/images/blog/obesity-students.jpg",
-  "musculoskeletal-disorders-bus-drivers": "/images/blog/back-pain.jpg",
-  "cardiovascular-risk-young-adults": "/images/blog/heart-health.jpg",
-  "nutrigenomics-future-nutrition": "/images/blog/nutrigenomics.jpg",
-  "covid19-impact-adolescent-health": "/images/blog/adolescent-health.jpg",
-  "hepatitis-b-awareness-study": "/images/blog/hepatitis-vaccine.jpg",
+  "diabetic-foot-care-guide": "/v1/images/blog/diabetic-foot-care.jpg",
+  "diabetes-reversal-lifestyle": "/v1/images/blog/diabetes-reversal.jpg",
+  "understanding-hba1c": "/v1/images/blog/hba1c.jpg",
+  "obesity-prevalence-college-students": "/v1/images/blog/obesity-students.jpg",
+  "musculoskeletal-disorders-bus-drivers": "/v1/images/blog/back-pain.jpg",
+  "cardiovascular-risk-young-adults": "/v1/images/blog/heart-health.jpg",
+  "nutrigenomics-future-nutrition": "/v1/images/blog/nutrigenomics.jpg",
+  "covid19-impact-adolescent-health": "/v1/images/blog/adolescent-health.jpg",
+  "hepatitis-b-awareness-study": "/v1/images/blog/hepatitis-vaccine.jpg",
 };
 
 interface PageProps {

@@ -13,37 +13,37 @@ const CERTIFICATES = [
     title: "MBBS Degree",
     issuer: "Pondicherry University",
     year: "2008",
-    image: "/images/certificates/mbbs-degree.jpg",
+    image: "/v1/images/certificates/mbbs-degree.jpg",
   },
   {
     title: "MD (Community Medicine) — First Class",
     issuer: "Meenakshi Academy of Higher Education, Chennai",
     year: "2014",
-    image: "/images/certificates/md-certificate.jpg",
+    image: "/v1/images/certificates/md-certificate.jpg",
   },
   {
     title: "CCEBDM — Evidence Based Diabetes Management",
     issuer: "PHFI & Dr. Mohan's Diabetes Education Academy",
     year: "2022",
-    image: "/images/certificates/ccebdm.jpg",
+    image: "/v1/images/certificates/ccebdm.jpg",
   },
   {
     title: "Kerala State Medical Registration",
     issuer: "Council of Modern Medicine, Kerala",
     year: "2023",
-    image: "/images/certificates/kerala-registration.jpg",
+    image: "/v1/images/certificates/kerala-registration.jpg",
   },
   {
     title: "ICMR Cancer Screening Workshop",
     issuer: "ICMR-NICPR & National Health Mission",
     year: "2022",
-    image: "/images/certificates/icmr-cancer-screening.jpg",
+    image: "/v1/images/certificates/icmr-cancer-screening.jpg",
   },
   {
     title: "NICPR Cancer Screening Training",
     issuer: "ICMR-National Institute of Cancer Prevention & Research",
     year: "2021–2022",
-    image: "/images/certificates/nicpr-cancer-training.jpg",
+    image: "/v1/images/certificates/nicpr-cancer-training.jpg",
   },
 ];
 

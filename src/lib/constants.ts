@@ -109,7 +109,7 @@ export const DOCTOR_INFO: DoctorInfo = {
   ],
   academicPosition:
     "Consultant Community and Family Physician, Arise Medical Centre | Former Professor, Kannur Medical College",
-  profileImage: "/images/doctor/dr-premlal.jpg",
+  profileImage: "/v1/images/doctor/dr-premlal.jpg",
 };
 
 // ---------------------------------------------------------------------------
@@ -122,14 +122,14 @@ export const TEAM_MEMBERS: TeamMember[] = [
     experience: "14 years",
     qualifications: "MBBS, MD",
     specialization: "Oncology, Primary Care",
-    image: "/images/team/dr-sruthi.jpg",
+    image: "/v1/images/team/dr-sruthi.jpg",
   },
   {
     name: "Dr. Prem K",
     experience: "10 years",
     qualifications: "MBBS, MD",
     specialization: "Diabetology, Primary Care",
-    image: "/images/team/dr-prem-k.jpg",
+    image: "/v1/images/team/dr-prem-k.jpg",
   },
 ];
 

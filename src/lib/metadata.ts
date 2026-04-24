@@ -8,7 +8,7 @@ interface PageMetadataOptions {
 }
 
 const SITE_NAME = "Arise Medical Centre";
-const DEFAULT_IMAGE = "/images/og-default.jpg";
+const DEFAULT_IMAGE = "/v1/images/og-default.jpg";
 
 export function generatePageMetadata({
   title,

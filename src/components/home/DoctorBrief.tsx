@@ -22,7 +22,7 @@ export default function DoctorBrief() {
             <div className="relative max-w-md mx-auto lg:mx-0">
               <div className="w-full aspect-[3/4] rounded-2xl overflow-hidden shadow-xl relative">
                 <Image
-                  src="/images/doctor/dr-premlal.jpg"
+                  src="/v1/images/doctor/dr-premlal.jpg"
                   alt={DOCTOR_INFO.name}
                   fill
                   className="object-cover"
