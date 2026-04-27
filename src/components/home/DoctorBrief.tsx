@@ -26,6 +26,7 @@ export default function DoctorBrief() {
                   alt={DOCTOR_INFO.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 448px"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/50 to-transparent" />
                 <span className="absolute bottom-6 left-0 right-0 text-center text-white/90 font-serif text-2xl">

@@ -6,21 +6,50 @@ import AcademicOverview from "@/components/academics/AcademicOverview";
 import ResearchPapers from "@/components/academics/ResearchPapers";
 import CoursesCatalog from "@/components/academics/CoursesCatalog";
 import EnrollmentCTA from "@/components/academics/EnrollmentCTA";
+import { canonicalFor } from "@/lib/metadata";
+import { breadcrumbSchema } from "@/lib/seo/structuredData";
+import JsonLd from "@/components/seo/JsonLd";
+
+const academicsUrl = canonicalFor("/academics");
 
 export const metadata: Metadata = {
   title: "Academics | Arise Medical Centre",
   description:
     "Explore academic programmes, research contributions, and training courses by Dr. K S Premlal — Associate Professor at Malabar Medical College with 22+ research citations.",
+  keywords: [
+    "Dr Premlal research",
+    "diabetes research India",
+    "medical education Kerala",
+    "academic medical centre Thrissur",
+    "PGDFM training Kerala",
+  ],
+  alternates: { canonical: academicsUrl },
   openGraph: {
     title: "Academics | Arise Medical Centre",
     description:
       "Academic programmes and training courses in diabetic care, palliative medicine, and cancer screening by Dr. K S Premlal.",
+    type: "website",
+    locale: "en_IN",
+    siteName: "Arise Medical Centre",
+    url: academicsUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Academics | Arise Medical Centre",
+    description:
+      "Academic programmes and training courses by Dr. K S Premlal.",
   },
 };
+
+const academicsBreadcrumbs = breadcrumbSchema([
+  { name: "Home", url: canonicalFor("/") },
+  { name: "Academics", url: academicsUrl },
+]);
 
 export default function AcademicsPage() {
   return (
     <>
+      <JsonLd id="ld-academics-breadcrumb" data={academicsBreadcrumbs} />
       {/* Hero Banner */}
       <section
         className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"

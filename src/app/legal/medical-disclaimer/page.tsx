@@ -4,11 +4,13 @@ import { ChevronRight } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
+import { canonicalFor } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Medical Disclaimer | Arise Medical Centre",
   description:
     "Medical disclaimer for Arise Medical Centre website. Information provided is for general awareness and is not a substitute for professional medical advice.",
+  alternates: { canonical: canonicalFor("/legal/medical-disclaimer") },
 };
 
 export default function MedicalDisclaimerPage() {

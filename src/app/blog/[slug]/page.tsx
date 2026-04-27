@@ -6,6 +6,12 @@ import { ChevronRight, ArrowLeft, Calendar, Clock, User } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
 import { getAllPosts, getPostBySlug } from "@/lib/blog";
+import { canonicalFor } from "@/lib/metadata";
+import {
+  blogPostingSchema,
+  breadcrumbSchema,
+} from "@/lib/seo/structuredData";
+import JsonLd from "@/components/seo/JsonLd";
 
 // Map blog slugs to their images
 const blogImages: Record<string, string> = {
@@ -37,10 +43,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     return { title: "Post Not Found | Arise Medical Centre" };
   }
 
+  const url = canonicalFor(`/blog/${post.slug}`);
+  const image = blogImages[post.slug] || post.image;
+
   return {
     title: `${post.title} | Arise Medical Centre`,
     description: post.excerpt,
     keywords: [post.category, "arise health", "Dr Prem Lal", "diabetes"],
+    alternates: { canonical: url },
     openGraph: {
       title: post.title,
       description: post.excerpt,
@@ -49,6 +59,14 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author],
       siteName: "Arise Medical Centre",
       locale: "en_IN",
+      url,
+      images: image ? [image] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: image ? [image] : undefined,
     },
   };
 }
@@ -104,8 +122,26 @@ export default async function BlogPostPage({ params }: PageProps) {
     })
     .join("\n");
 
+  const breadcrumbs = breadcrumbSchema([
+    { name: "Home", url: canonicalFor("/") },
+    { name: "Blog", url: canonicalFor("/blog") },
+    { name: post.title, url: canonicalFor(`/blog/${post.slug}`) },
+  ]);
+  const article = blogPostingSchema({
+    title: post.title,
+    excerpt: post.excerpt,
+    date: post.date,
+    author: post.author,
+    slug: post.slug,
+    category: post.category,
+    image: imageSrc,
+    readingTime: post.readingTime,
+  });
+
   return (
     <>
+      <JsonLd id="ld-blog-post" data={article} />
+      <JsonLd id="ld-blog-breadcrumb" data={breadcrumbs} />
       {/* Hero with featured image */}
       <section className="relative">
         {/* Image background */}
@@ -117,6 +153,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               fill
               className="object-cover"
               priority
+              sizes="100vw"
             />
           ) : (
             <div className="w-full h-full bg-gradient-to-br from-healing-teal/30 to-deep-teal/60" />

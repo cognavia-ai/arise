@@ -4,11 +4,13 @@ import { ChevronRight } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
+import { canonicalFor } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Privacy Policy | Arise Medical Centre",
   description:
     "Privacy policy for Arise Medical Centre. Learn how we collect, use, and protect your personal data in compliance with the DPDP Act 2023.",
+  alternates: { canonical: canonicalFor("/legal/privacy-policy") },
 };
 
 export default function PrivacyPolicyPage() {

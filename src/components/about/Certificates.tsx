@@ -75,6 +75,7 @@ export default function Certificates() {
                   alt={cert.title}
                   fill
                   className="object-cover rounded-t-xl transition-transform duration-300 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                 />
                 {/* Hover overlay */}
                 <div className="absolute inset-0 bg-charcoal/0 group-hover:bg-charcoal/20 transition-colors duration-300 flex items-center justify-center">

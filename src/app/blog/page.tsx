@@ -4,6 +4,11 @@ import { ChevronRight } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { getAllPosts, getAllCategories } from "@/lib/blog";
 import BlogListingClient from "@/components/blog/BlogListingClient";
+import { canonicalFor } from "@/lib/metadata";
+import { breadcrumbSchema } from "@/lib/seo/structuredData";
+import JsonLd from "@/components/seo/JsonLd";
+
+const blogUrl = canonicalFor("/blog");
 
 export const metadata: Metadata = {
   title: "Blog & Resources | Arise Medical Centre",
@@ -17,6 +22,7 @@ export const metadata: Metadata = {
     "health blog thrissur",
     "Dr Premlal articles",
   ],
+  alternates: { canonical: blogUrl },
   openGraph: {
     title: "Blog & Resources | Arise Medical Centre",
     description:
@@ -24,8 +30,20 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
     siteName: "Arise Medical Centre",
+    url: blogUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Blog & Resources | Arise Medical Centre",
+    description:
+      "Expert health articles from Dr. K S Premlal at Arise Medical Centre.",
   },
 };
+
+const blogBreadcrumbs = breadcrumbSchema([
+  { name: "Home", url: canonicalFor("/") },
+  { name: "Blog", url: blogUrl },
+]);
 
 export default function BlogPage() {
   const posts = getAllPosts();
@@ -33,6 +51,7 @@ export default function BlogPage() {
 
   return (
     <>
+      <JsonLd id="ld-blog-breadcrumb" data={blogBreadcrumbs} />
       {/* Hero Banner */}
       <section
         className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"

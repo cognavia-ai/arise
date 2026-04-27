@@ -4,6 +4,9 @@ import { ChevronRight, Phone, MessageCircle } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
+import { canonicalFor } from "@/lib/metadata";
+import { breadcrumbSchema } from "@/lib/seo/structuredData";
+import JsonLd from "@/components/seo/JsonLd";
 
 import DoctorProfile from "@/components/about/DoctorProfile";
 import CareerTimeline from "@/components/about/CareerTimeline";
@@ -11,6 +14,8 @@ import ClinicStory from "@/components/about/ClinicStory";
 import TeamSection from "@/components/about/TeamSection";
 import Infrastructure from "@/components/about/Infrastructure";
 import Certificates from "@/components/about/Certificates";
+
+const aboutUrl = canonicalFor("/about");
 
 export const metadata: Metadata = {
   title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
@@ -26,6 +31,7 @@ export const metadata: Metadata = {
     "TMC 85605",
     "best diabetologist thrissur",
   ],
+  alternates: { canonical: aboutUrl },
   openGraph: {
     title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
     description:
@@ -33,12 +39,25 @@ export const metadata: Metadata = {
     locale: "en_IN",
     type: "website",
     siteName: "Arise Medical Centre",
+    url: aboutUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
+    description:
+      "17+ years of evidence-based diabetic care, diabetes reversal, and limb-saving wound care.",
   },
 };
+
+const aboutBreadcrumbs = breadcrumbSchema([
+  { name: "Home", url: canonicalFor("/") },
+  { name: "About", url: aboutUrl },
+]);
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd id="ld-about-breadcrumb" data={aboutBreadcrumbs} />
       {/* Hero Banner */}
       <section
         className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"

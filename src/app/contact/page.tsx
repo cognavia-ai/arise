@@ -6,21 +6,50 @@ import { CLINIC_INFO } from "@/lib/constants";
 import AppointmentForm from "@/components/contact/AppointmentForm";
 import ContactInfoCards from "@/components/contact/ContactInfoCards";
 import ClinicMap from "@/components/contact/ClinicMap";
+import { canonicalFor } from "@/lib/metadata";
+import { breadcrumbSchema } from "@/lib/seo/structuredData";
+import JsonLd from "@/components/seo/JsonLd";
+
+const contactUrl = canonicalFor("/contact");
 
 export const metadata: Metadata = {
   title: "Contact Us | Arise Medical Centre",
   description:
     "Book an appointment at Arise Medical Centre, Thrissur. Call +91 85920 20242 or fill our online form. Mon-Sat 7AM-7PM.",
+  keywords: [
+    "contact arise medical centre",
+    "book appointment Dr Premlal",
+    "Thrissur clinic contact",
+    "Villadom clinic phone",
+    "WhatsApp doctor Thrissur",
+  ],
+  alternates: { canonical: contactUrl },
   openGraph: {
     title: "Contact Us | Arise Medical Centre",
     description:
       "Book an appointment with Dr. K S Premlal at Arise Medical Centre, Villadom, Thrissur. Walk-ins welcome.",
+    type: "website",
+    locale: "en_IN",
+    siteName: "Arise Medical Centre",
+    url: contactUrl,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Contact Us | Arise Medical Centre",
+    description:
+      "Book an appointment with Dr. K S Premlal. Call +91 85920 20242 or visit Villadom, Thrissur.",
   },
 };
+
+const contactBreadcrumbs = breadcrumbSchema([
+  { name: "Home", url: canonicalFor("/") },
+  { name: "Contact", url: contactUrl },
+]);
 
 export default function ContactPage() {
   return (
     <>
+      <JsonLd id="ld-contact-breadcrumb" data={contactBreadcrumbs} />
       {/* Hero Banner */}
       <section
         className="relative pt-32 pb-20 md:pt-40 md:pb-28 overflow-hidden"

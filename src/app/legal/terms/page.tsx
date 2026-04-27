@@ -4,11 +4,13 @@ import { ChevronRight } from "lucide-react";
 
 import { Container } from "@/components/ui/Container";
 import { CLINIC_INFO } from "@/lib/constants";
+import { canonicalFor } from "@/lib/metadata";
 
 export const metadata: Metadata = {
   title: "Terms & Conditions | Arise Medical Centre",
   description:
     "Terms and conditions for using the Arise Medical Centre website. Read about our policies on appointments, intellectual property, and liability.",
+  alternates: { canonical: canonicalFor("/legal/terms") },
 };
 
 export default function TermsPage() {

@@ -66,6 +66,7 @@ export default function DoctorProfile() {
                   alt={DOCTOR_INFO.name}
                   fill
                   className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 {/* Decorative organic shape */}
                 <div className="absolute -top-6 -right-6 w-32 h-32 bg-soft-teal/30 rounded-full blur-2xl" />

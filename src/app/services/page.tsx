@@ -10,6 +10,14 @@ import CancerScreening from "@/components/services/CancerScreening";
 import PalliativeCare from "@/components/services/PalliativeCare";
 import Counselling from "@/components/services/Counselling";
 import TeleConsultation from "@/components/services/TeleConsultation";
+import { canonicalFor } from "@/lib/metadata";
+import {
+  breadcrumbSchema,
+  servicesItemListSchema,
+} from "@/lib/seo/structuredData";
+import JsonLd from "@/components/seo/JsonLd";
+
+const url = canonicalFor("/services");
 
 export const metadata: Metadata = {
   title: "Services — Diabetes Reversal, Wound Care & More | Arise Medical Centre",
@@ -26,17 +34,34 @@ export const metadata: Metadata = {
     "best diabetologist Thrissur",
     "HbA1c reduction program India",
   ],
+  alternates: { canonical: url },
   openGraph: {
     title: "Services — Diabetes Reversal, Wound Care & More | Arise Medical Centre",
     description:
       "Proven diabetes reversal. Limb-saving wound care. ICMR-certified cancer screening. 7 specialised services by Dr. K S Premlal in Thrissur.",
     type: "website",
+    url,
+    locale: "en_IN",
+    siteName: "Arise Medical Centre",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Services — Diabetes Reversal, Wound Care & More | Arise Medical Centre",
+    description:
+      "Proven diabetes reversal. Limb-saving wound care. ICMR-certified cancer screening. 7 specialised services by Dr. K S Premlal in Thrissur.",
   },
 };
+
+const breadcrumbs = breadcrumbSchema([
+  { name: "Home", url: canonicalFor("/") },
+  { name: "Services", url },
+]);
 
 export default function ServicesPage() {
   return (
     <main>
+      <JsonLd id="ld-services-list" data={servicesItemListSchema()} />
+      <JsonLd id="ld-services-breadcrumb" data={breadcrumbs} />
       {/* Hero */}
       <ServiceHero />
 

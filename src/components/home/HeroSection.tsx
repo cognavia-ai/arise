@@ -60,6 +60,7 @@ export default function HeroSection() {
                   fill
                   className="object-cover"
                   priority
+                  sizes="(max-width: 1024px) 256px, 384px"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-charcoal/60 to-transparent" />
                 <span className="absolute bottom-4 left-0 right-0 text-center text-white/90 font-serif text-lg">
