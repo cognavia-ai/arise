@@ -83,14 +83,17 @@ export default function DoctorProfile() {
               </div>
 
               {/* Floating experience badge */}
-              <div className="absolute -bottom-4 -right-4 lg:-right-8 glass rounded-xl px-5 py-3 shadow-lg">
+              <div
+                className="absolute -bottom-6 right-4 lg:-right-6 rounded-xl px-5 py-3 shadow-xl border border-gray-100"
+                style={{ backgroundColor: "#FFFFFF" }}
+              >
                 <div className="flex items-center gap-2">
                   <Briefcase className="w-5 h-5 text-healing-teal" />
                   <div>
-                    <div className="text-2xl font-bold text-charcoal" style={{ color: "#1E293B" }}>
+                    <div className="text-2xl font-bold leading-tight" style={{ color: "#1E293B" }}>
                       Since 2009
                     </div>
-                    <p className="text-xs text-slate" style={{ color: "#64748B" }}>In practice</p>
+                    <p className="text-xs leading-tight mt-0.5" style={{ color: "#64748B" }}>In practice</p>
                   </div>
                 </div>
               </div>
