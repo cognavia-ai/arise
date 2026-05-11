@@ -75,7 +75,7 @@ export default function DoctorBrief() {
 
             <ScrollReveal animation="fadeUp" delay={0.4}>
               <p className="text-slate leading-relaxed" style={{ color: "#64748B" }}>
-                For over 17 years, Dr. Premlal has helped thousands of patients
+                Since 2009, Dr. Premlal has helped thousands of patients
                 reverse diabetes, heal chronic wounds, and avoid amputations.
                 His approach is simple but powerful — listen carefully, treat the
                 whole person, and use evidence-based protocols that deliver

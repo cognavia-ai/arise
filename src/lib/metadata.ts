@@ -60,7 +60,7 @@ export const DEFAULT_METADATA: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description:
-    "Proven diabetes reversal (HbA1c 9.2 to 6.5 in 3 months) and CMC-accredited wound care without amputation in Thrissur, Kerala. 17+ years of evidence-based care by Dr. K S Premlal. 4.9-star rating from 387+ patients.",
+    "Proven diabetes reversal (HbA1c 9.2 to 6.5 in 3 months) and CMC-accredited wound care without amputation in Thrissur, Kerala. Evidence-based care by Dr. K S Premlal, in practice since 2009. 4.9-star rating from 387+ patients.",
   keywords: [
     "diabetic care thrissur",
     "wound care without amputation",

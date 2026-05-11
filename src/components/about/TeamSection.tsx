@@ -31,7 +31,7 @@ export default function TeamSection() {
       name: DOCTOR_INFO.name,
       qualifications: "MBBS, MD, PGDFM, CCEBDM, BCCPM, MSc",
       specialization: "Diabetology, Preventive Medicine, Palliative Care",
-      experience: "17+ years",
+      experience: "Since 2009",
       initials: getInitials(DOCTOR_INFO.name),
       isLead: true,
     },

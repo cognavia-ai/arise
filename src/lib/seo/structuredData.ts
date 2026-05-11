@@ -57,7 +57,7 @@ const ADDRESS = {
   addressCountry: "IN",
 };
 
-const yearsExperience = Number(DOCTOR_INFO.experience.replace(/\D/g, "")) || 17;
+const yearsExperience = new Date().getFullYear() - DOCTOR_INFO.practiceStartYear;
 const reviewCount = STATS.find((s) => s.label === "Google Reviews")?.value ?? 387;
 const ratingValue = STATS.find((s) => s.label === "Star Rating")?.value ?? 4.9;
 

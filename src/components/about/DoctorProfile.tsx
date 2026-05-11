@@ -7,7 +7,6 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Container } from "@/components/ui/Container";
 import { Badge } from "@/components/ui/Badge";
 import { DOCTOR_INFO } from "@/lib/constants";
-import CounterAnimation from "@/components/animation/CounterAnimation";
 import ScrollReveal from "@/components/animation/ScrollReveal";
 import { GraduationCap, Languages, Award, Briefcase } from "lucide-react";
 
@@ -89,13 +88,9 @@ export default function DoctorProfile() {
                   <Briefcase className="w-5 h-5 text-healing-teal" />
                   <div>
                     <div className="text-2xl font-bold text-charcoal" style={{ color: "#1E293B" }}>
-                      <CounterAnimation
-                        target={17}
-                        suffix="+"
-                        className="text-2xl font-bold text-charcoal"
-                      />
+                      Since 2009
                     </div>
-                    <p className="text-xs text-slate" style={{ color: "#64748B" }}>Years Experience</p>
+                    <p className="text-xs text-slate" style={{ color: "#64748B" }}>In practice</p>
                   </div>
                 </div>
               </div>

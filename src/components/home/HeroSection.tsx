@@ -90,7 +90,7 @@ export default function HeroSection() {
               <p className="text-gray-300 text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ color: "#D1D5DB" }}>
                 When doctors said amputation was the only option, our patients
                 walked out on both feet. Evidence-based diabetes reversal and
-                advanced wound care — trusted by 10,000+ patients over 17 years.
+                advanced wound care — trusted by 10,000+ patients since 2009.
               </p>
             </ScrollReveal>
 
@@ -152,9 +152,9 @@ export default function HeroSection() {
               {/* Floating glass badge */}
               <div className="absolute -bottom-4 -left-8 glass rounded-xl px-4 py-3 z-20 animate-fade-up">
                 <div className="text-xs text-slate font-medium" style={{ color: "#64748B" }}>
-                  Experience
+                  Practising
                 </div>
-                <div className="text-lg font-bold text-charcoal" style={{ color: "#1E293B" }}>17+ Years</div>
+                <div className="text-lg font-bold text-charcoal" style={{ color: "#1E293B" }}>Since 2009</div>
               </div>
 
               <div className="absolute -top-4 -right-4 glass rounded-xl px-4 py-3 z-20 animate-fade-up">

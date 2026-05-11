@@ -95,7 +95,8 @@ export const DOCTOR_INFO: DoctorInfo = {
     number: "TMC 85605",
     council: "Tamil Nadu Medical Council",
   },
-  experience: "17+",
+  experience: "Since 2009",
+  practiceStartYear: 2009,
   languages: ["English", "Malayalam", "Hindi", "Tamil"],
   specializations: [
     "Community & Family Medicine",
@@ -194,7 +195,11 @@ export const TESTIMONIALS: Testimonial[] = [
 // ---------------------------------------------------------------------------
 
 export const STATS: Stat[] = [
-  { label: "Years Experience", value: 17, suffix: "+" },
+  {
+    label: "Years Experience",
+    value: new Date().getFullYear() - 2009,
+    suffix: "+",
+  },
   { label: "Google Reviews", value: 387, suffix: "+" },
   { label: "Star Rating", value: 4.9, suffix: "/5" },
   { label: "Patients Treated", value: 10000, suffix: "+" },

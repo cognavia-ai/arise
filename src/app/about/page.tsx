@@ -20,7 +20,7 @@ const aboutUrl = canonicalFor("/about");
 export const metadata: Metadata = {
   title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
   description:
-    "Dr. K S Premlal — CCEBDM, CMC-accredited, WHO-certified — brings 17+ years of expertise in diabetes reversal and wound care. Meet the team behind 10,000+ successful patient outcomes in Thrissur, Kerala.",
+    "Dr. K S Premlal — CCEBDM, CMC-accredited, WHO-certified — brings expertise in diabetes reversal and wound care, in practice since 2009. Meet the team behind 10,000+ successful patient outcomes in Thrissur, Kerala.",
   keywords: [
     "Dr K S Premlal",
     "Arise Medical Centre",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
     description:
-      "17+ years of evidence-based diabetic care, diabetes reversal, and limb-saving wound care. Meet the team that 10,000+ patients trust in Thrissur, Kerala.",
+      "Evidence-based diabetic care, diabetes reversal, and limb-saving wound care since 2009. Meet the team that 10,000+ patients trust in Thrissur, Kerala.",
     locale: "en_IN",
     type: "website",
     siteName: "Arise Medical Centre",
@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "About Dr. K S Premlal & Our Team | Arise Medical Centre",
     description:
-      "17+ years of evidence-based diabetic care, diabetes reversal, and limb-saving wound care.",
+      "Evidence-based diabetic care, diabetes reversal, and limb-saving wound care since 2009.",
   },
 };
 
@@ -84,8 +84,8 @@ export default function AboutPage() {
             </h1>
 
             <p className="text-lg md:text-xl max-w-2xl leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
-              17+ years of helping patients reverse diabetes, save limbs, and
-              reclaim their health — one evidence-based treatment plan at a time.
+              Helping patients reverse diabetes, save limbs, and reclaim
+              their health since 2009 — one evidence-based treatment plan at a time.
             </p>
           </div>
         </Container>

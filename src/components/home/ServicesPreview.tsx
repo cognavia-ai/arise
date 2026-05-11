@@ -33,7 +33,7 @@ export default function ServicesPreview() {
         <ScrollReveal animation="fadeUp">
           <SectionHeading
             title="Our Services"
-            subtitle="From diabetes reversal to cancer screening — specialised care backed by 17+ years of clinical expertise"
+            subtitle="From diabetes reversal to cancer screening — specialised care, practising since 2009"
           />
         </ScrollReveal>
 

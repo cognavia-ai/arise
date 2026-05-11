@@ -1,6 +1,6 @@
 # Arise Medical Centre
 
-> A community and family medical clinic in Thrissur, Kerala, India, led by Dr. K S Premlal (MBBS, MD, PGDFM, CCEBDM, BCCPM). Specialises in evidence-based diabetes reversal, diabetic wound care without amputation, preventive health, cancer screening, palliative care, counselling, and tele-consultation. 17+ years of experience, 4.9-star rating from 387+ Google reviews, 10,000+ patients treated.
+> A community and family medical clinic in Thrissur, Kerala, India, led by Dr. K S Premlal (MBBS, MD, PGDFM, CCEBDM, BCCPM). Specialises in evidence-based diabetes reversal, diabetic wound care without amputation, preventive health, cancer screening, palliative care, counselling, and tele-consultation. In clinical practice since 2009, 4.9-star rating from 387+ Google reviews, 10,000+ patients treated.
 
 ## About the Clinic
 
@@ -18,7 +18,7 @@
 - Name: Dr. K S Premlal
 - Full Title: Dr. K S Premlal, MBBS, MD (Community Medicine), PGDFM, CCEBDM, BCCPM
 - Medical Registration: TMC 85605 (Tamil Nadu Medical Council)
-- Experience: 17+ years
+- In clinical practice since: 2009
 - Current Role: Consultant Community and Family Physician, Arise Medical Centre
 - Former Role: Professor, Kannur Medical College
 - Specialisations: Community & Family Medicine; Diabetology & Diabetic Foot Care; Diabetic Wound Care Without Amputation; Diabetic Reversal Program; Preventive Oncology / Cancer Screening; Pain Management & Palliative Care; Counselling & Psychotherapy; Preventive Cardiology

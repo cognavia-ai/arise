@@ -44,7 +44,7 @@ export const FAQ_ITEMS: FaqItem[] = [
   },
   {
     question: "What are Dr. Premlal's qualifications?",
-    answer: `${DOCTOR_INFO.fullTitle}. He has ${DOCTOR_INFO.experience} years of clinical experience and is registered with the ${DOCTOR_INFO.registration.council} (Reg. No. ${DOCTOR_INFO.registration.number}).`,
+    answer: `${DOCTOR_INFO.fullTitle}. He has been in clinical practice since ${DOCTOR_INFO.practiceStartYear} and is registered with the ${DOCTOR_INFO.registration.council} (Reg. No. ${DOCTOR_INFO.registration.number}).`,
   },
   {
     question: "What services are offered at the clinic?",

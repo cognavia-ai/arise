@@ -53,6 +53,7 @@ export interface DoctorInfo {
     council: string;
   };
   experience: string;
+  practiceStartYear: number;
   languages: string[];
   specializations: string[];
   academicPosition: string;
