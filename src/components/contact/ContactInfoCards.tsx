@@ -1,6 +1,6 @@
 "use client";
 
-import { Phone, Clock, IndianRupee } from "lucide-react";
+import { Phone, Clock } from "lucide-react";
 import { Card } from "@/components/ui/Card";
 import { CLINIC_INFO } from "@/lib/constants";
 import StaggerChildren from "@/components/animation/StaggerChildren";
@@ -42,12 +42,6 @@ const infoCards: InfoCard[] = [
     title: "Operating Hours",
     detail: "Mon\u2013Sat: 7AM\u20137PM",
     subDetail: "Sunday: Closed",
-  },
-  {
-    icon: <IndianRupee className="w-6 h-6" />,
-    title: "Consultation Fee",
-    detail: "Starting from ₹500",
-    subDetail: "Cash & UPI accepted",
   },
 ];
 
