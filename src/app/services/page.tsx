@@ -108,10 +108,16 @@ export default function ServicesPage() {
 
         <Container className="relative z-10 py-20 md:py-28">
           <div className="flex flex-col items-center text-center gap-6">
-            <h2 className="font-serif text-white text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight">
+            <h2
+              className="font-serif text-3xl md:text-4xl lg:text-5xl leading-tight tracking-tight"
+              style={{ color: "#FFFFFF" }}
+            >
               Don&apos;t Wait for Symptoms to Worsen
             </h2>
-            <p className="text-white/85 text-lg md:text-xl max-w-2xl leading-relaxed">
+            <p
+              className="text-lg md:text-xl max-w-2xl leading-relaxed"
+              style={{ color: "rgba(255,255,255,0.92)" }}
+            >
               Whether it&apos;s uncontrolled blood sugar, a wound that won&apos;t
               heal, or a health concern you&apos;ve been putting off — the sooner
               you act, the better the outcome. Talk to Dr. Premlal today.
@@ -119,14 +125,16 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 mt-4">
               <Link
                 href="/contact"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white text-healing-teal font-semibold text-lg transition-all duration-200 hover:bg-white/90 hover:shadow-lg active:scale-95"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg bg-white font-semibold text-lg transition-all duration-200 hover:bg-white/90 hover:shadow-lg active:scale-95"
+                style={{ color: "#0D9488" }}
               >
                 Book Appointment
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a
                 href="tel:+918592020242"
-                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-white text-white font-semibold text-lg transition-all duration-200 hover:bg-white/10 active:scale-95"
+                className="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-lg border-2 border-white font-semibold text-lg transition-all duration-200 hover:bg-white/10 active:scale-95"
+                style={{ color: "#FFFFFF" }}
               >
                 Call +91 85920 20242
               </a>
