@@ -74,7 +74,6 @@ export default function HeroSection() {
           <div className="lg:col-span-3 flex flex-col gap-6 text-center lg:text-left">
             <ScrollReveal animation="fadeIn" delay={0}>
               <Badge className="inline-flex self-center lg:self-start">
-                <span className="mr-1.5" aria-hidden="true">&#127973;</span>
                 Thrissur&apos;s Trusted Diabetes &amp; Wound Care Centre
               </Badge>
             </ScrollReveal>
