@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Phone, MapPin, Clock, MessageCircle } from "lucide-react";
 import { CLINIC_INFO, NAV_LINKS, SOCIAL_LINKS } from "@/lib/constants";
 import { Container } from "@/components/ui/Container";
@@ -22,9 +23,22 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8">
           {/* Column 1: Clinic Info */}
           <div className="space-y-4">
-            <Link href="/" className="inline-block">
-              <span className="font-serif text-2xl font-bold tracking-tight" style={{ color: "#FFFFFF" }}>
-                Arise <span className="text-healing-teal">Health</span>
+            <Link
+              href="/"
+              aria-label="Arise Medical Centre — Home"
+              className="inline-flex items-center gap-2.5"
+            >
+              <Image
+                src="/v1/images/logo/arise-logo.png"
+                alt="Arise Health logo"
+                width={44}
+                height={44}
+                className="w-10 h-10 rounded-md shrink-0"
+              />
+              <span
+                className="font-serif text-2xl font-bold tracking-tight text-healing-teal"
+              >
+                Arise Health
               </span>
             </Link>
             <p className="text-sm leading-relaxed" style={{ color: "#94A3B8" }}>

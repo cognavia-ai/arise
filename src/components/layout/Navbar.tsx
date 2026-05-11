@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { Phone } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -43,15 +44,25 @@ export function Navbar() {
             {/* Logo */}
             <Link
               href="/"
-              className="flex items-center gap-2 font-serif text-xl lg:text-2xl font-bold tracking-tight"
+              aria-label="Arise Medical Centre — Home"
+              className="flex items-center gap-2.5 font-serif text-xl lg:text-2xl font-bold tracking-tight"
             >
-              <span className={cn(
-                "transition-colors duration-300",
-                isAtTop ? "text-white" : "text-charcoal"
-              )}>
-                Arise
+              <Image
+                src="/v1/images/logo/arise-logo.png"
+                alt="Arise Health logo"
+                width={48}
+                height={48}
+                className="w-9 h-9 lg:w-11 lg:h-11 rounded-md shrink-0"
+                priority
+              />
+              <span
+                className={cn(
+                  "transition-colors duration-300",
+                  isAtTop ? "text-white" : "text-healing-teal"
+                )}
+              >
+                Arise Health
               </span>
-              <span className="text-healing-teal">Health</span>
             </Link>
 
             {/* Desktop Nav Links */}
