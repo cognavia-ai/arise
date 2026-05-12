@@ -8,6 +8,7 @@ import { canonicalFor } from "@/lib/metadata";
 import { breadcrumbSchema } from "@/lib/seo/structuredData";
 import JsonLd from "@/components/seo/JsonLd";
 
+import AboutIntro from "@/components/about/AboutIntro";
 import DoctorProfile from "@/components/about/DoctorProfile";
 import CareerTimeline from "@/components/about/CareerTimeline";
 import ClinicStory from "@/components/about/ClinicStory";
@@ -91,6 +92,7 @@ export default function AboutPage() {
         </Container>
       </section>
 
+      <AboutIntro />
       <DoctorProfile />
       <CareerTimeline />
       <ClinicStory />
