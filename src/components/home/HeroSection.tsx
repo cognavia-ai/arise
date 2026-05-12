@@ -88,9 +88,12 @@ export default function HeroSection() {
 
             <ScrollReveal animation="fadeUp" delay={0.6}>
               <p className="text-gray-300 text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ color: "#D1D5DB" }}>
-                When doctors said amputation was the only option, our patients
-                walked out on both feet. Evidence-based diabetes reversal and
-                advanced wound care — trusted by 10,000+ patients since 2009.
+                Patients, who were told amputation is the only option,
+                approached our clinic and walked out on their both feet.
+                Ours is a different, comprehensive approach to diabetic
+                healing, an evident based diabetic reversal (remission) and
+                advanced wound care protocol trusted by thousands of
+                patients since 2009.
               </p>
             </ScrollReveal>
 
