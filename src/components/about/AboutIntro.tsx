@@ -2,7 +2,6 @@
 
 import { Container } from "@/components/ui/Container";
 import ScrollReveal from "@/components/animation/ScrollReveal";
-import { Sparkles } from "lucide-react";
 
 export default function AboutIntro() {
   return (
@@ -10,18 +9,6 @@ export default function AboutIntro() {
       <Container>
         <div className="max-w-3xl mx-auto text-center">
           <ScrollReveal animation="fadeUp">
-            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-soft-teal/40 mb-5">
-              <Sparkles className="w-4 h-4 text-healing-teal" aria-hidden="true" />
-              <span
-                className="text-xs font-semibold uppercase tracking-wider"
-                style={{ color: "#0F766E" }}
-              >
-                About Us
-              </span>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal animation="fadeUp" delay={0.1}>
             <h2
               className="font-serif text-3xl sm:text-4xl lg:text-5xl leading-tight"
               style={{ color: "#1E293B" }}
@@ -30,7 +17,7 @@ export default function AboutIntro() {
             </h2>
           </ScrollReveal>
 
-          <ScrollReveal animation="fadeUp" delay={0.25}>
+          <ScrollReveal animation="fadeUp" delay={0.15}>
             <p
               className="mt-8 text-base md:text-lg leading-relaxed"
               style={{ color: "#475569" }}
@@ -44,7 +31,7 @@ export default function AboutIntro() {
             </p>
           </ScrollReveal>
 
-          <ScrollReveal animation="fadeUp" delay={0.4}>
+          <ScrollReveal animation="fadeUp" delay={0.3}>
             <p
               className="mt-5 text-base md:text-lg leading-relaxed"
               style={{ color: "#475569" }}
