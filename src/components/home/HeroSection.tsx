@@ -91,7 +91,7 @@ export default function HeroSection() {
                 Patients, who were told amputation is the only option,
                 approached our clinic and walked out on their both feet.
                 Ours is a different, comprehensive approach to diabetic
-                healing, an evident based diabetic reversal (remission) and
+                healing, an evidence based diabetic reversal (remission) and
                 advanced wound care protocol trusted by thousands of
                 patients since 2009.
               </p>

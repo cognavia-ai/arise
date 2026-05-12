@@ -86,7 +86,7 @@ export default function AboutPage() {
 
             <p className="text-lg md:text-xl max-w-2xl leading-relaxed" style={{ color: "rgba(255,255,255,0.8)" }}>
               Helping patients reverse diabetes, save limbs, and reclaim
-              their health since 2009 — one evidence-based treatment plan at a time.
+              their health since 2009, one evidence based treatment plan at a time.
             </p>
           </div>
         </Container>

@@ -39,7 +39,7 @@ export default function AboutIntro() {
               The treatment protocol at Arise is a different and comprehensive
               one, consisting of diabetic reversal (remission) and treatment
               for related complications, with a special focus on diabetic
-              wound care. Our evident based diabetic reversal and advanced
+              wound care. Our evidence based diabetic reversal and advanced
               wound care protocol is trusted and benefited by thousands of
               patients since 2009.
             </p>
