@@ -29,11 +29,11 @@ export function Footer() {
               className="inline-flex items-center gap-2.5"
             >
               <Image
-                src="/v1/images/logo/arise-logo.png"
+                src="/v1/images/logo/arise-logo-transparent.png"
                 alt="Arise Health logo"
                 width={44}
                 height={44}
-                className="w-10 h-10 rounded-md shrink-0"
+                className="w-10 h-10 shrink-0"
               />
               <span
                 className="font-serif text-2xl font-bold tracking-tight text-healing-teal"

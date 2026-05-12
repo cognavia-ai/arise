@@ -48,11 +48,15 @@ export function Navbar() {
               className="flex items-center gap-2.5 font-serif text-xl lg:text-2xl font-bold tracking-tight"
             >
               <Image
-                src="/v1/images/logo/arise-logo.png"
+                src={
+                  isAtTop
+                    ? "/v1/images/logo/arise-logo-transparent.png"
+                    : "/v1/images/logo/arise-logo-teal.png"
+                }
                 alt="Arise Health logo"
                 width={48}
                 height={48}
-                className="w-9 h-9 lg:w-11 lg:h-11 rounded-md shrink-0"
+                className="w-9 h-9 lg:w-11 lg:h-11 shrink-0"
                 priority
               />
               <span
