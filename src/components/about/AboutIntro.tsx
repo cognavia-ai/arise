@@ -24,9 +24,9 @@ export default function AboutIntro() {
             >
               Arise Diabetic &amp; Foot Care, formerly known as Sukrithi Family
               Health Center, is a diabetic and lifestyle disease clinic based
-              in Thrissur, Kerala. Arise is headed by Dr. Premlal — a diabetes
+              in Thrissur, Kerala. Arise is headed by Dr. Premlal, a diabetes
               and diabetic foot care expert and former professor at Malabar
-              Medical College &amp; Hospital — supported by a team of expert
+              Medical College &amp; Hospital, supported by a team of expert
               doctors and healthcare professionals.
             </p>
           </ScrollReveal>
@@ -37,9 +37,9 @@ export default function AboutIntro() {
               style={{ color: "#475569" }}
             >
               The treatment protocol at Arise is a different and comprehensive
-              one — consisting of diabetic reversal (remission) and treatment
+              one, consisting of diabetic reversal (remission) and treatment
               for related complications, with a special focus on diabetic
-              wound care. Our evident-based diabetic reversal and advanced
+              wound care. Our evident based diabetic reversal and advanced
               wound care protocol is trusted and benefited by thousands of
               patients since 2009.
             </p>
