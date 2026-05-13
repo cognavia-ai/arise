@@ -88,7 +88,7 @@ export default function HeroSection() {
 
             <ScrollReveal animation="fadeUp" delay={0.6}>
               <p className="text-gray-300 text-lg lg:text-xl max-w-xl mx-auto lg:mx-0 leading-relaxed" style={{ color: "#D1D5DB" }}>
-                Patients, who were told amputation is the only option,
+                Patients who were told amputation is the only option
                 approached our clinic and walked out on their both feet.
                 Ours is a different, comprehensive approach to diabetic
                 healing, an evidence based diabetic reversal (remission) and
