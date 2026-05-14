@@ -78,7 +78,7 @@ export default function HeroSection() {
               </Badge>
             </ScrollReveal>
 
-            <h1 className="font-serif text-white leading-tight tracking-tight text-4xl sm:text-5xl lg:text-6xl xl:text-7xl" style={{ color: "#FFFFFF" }}>
+            <h1 className="font-sans font-bold text-white leading-tight tracking-tight text-4xl sm:text-5xl lg:text-6xl xl:text-7xl" style={{ color: "#FFFFFF", fontFamily: "var(--font-inter), system-ui, sans-serif" }}>
               <TextSplitReveal
                 text="Saving Limbs, Transforming Lives"
                 className="text-white [&_.split-word]:text-white"
