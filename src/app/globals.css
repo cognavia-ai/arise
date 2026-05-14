@@ -20,7 +20,8 @@
   --color-whatsapp: #25D366;
 
   /* Font families (mapped to Next.js font variables) */
-  --font-serif: var(--font-dm-serif);
+  /* Headings now use the same Inter family as the body for a unified look. */
+  --font-serif: var(--font-inter);
   --font-sans: var(--font-inter);
   --font-display: var(--font-dm-sans);
 
@@ -387,7 +388,8 @@ body {
    ============================================ */
 
 h1, h2, h3 {
-  font-family: var(--font-serif, 'DM Serif Display', Georgia, serif);
+  font-family: var(--font-inter, 'Inter', system-ui, -apple-system, sans-serif);
+  font-weight: 700;
   line-height: var(--leading-tight);
   letter-spacing: var(--tracking-tight);
   color: var(--color-neutral-dark);
